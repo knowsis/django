@@ -63,11 +63,18 @@ Are you sure you want to do this?
 
         if confirm == 'yes':
             try:
-                with transaction.atomic(using=database,
-                                        savepoint=connection.features.can_rollback_ddl):
+
+                if connection.features.atomic_transactions:
+                    with transaction.atomic(using=database,
+                                            savepoint=connection.features.can_rollback_ddl):
+                        cursor = connection.cursor()
+                        for sql in sql_list:
+                            cursor.execute(sql)
+                else:
                     cursor = connection.cursor()
                     for sql in sql_list:
                         cursor.execute(sql)
+
             except Exception as e:
                 new_msg = (
                     "Database %s couldn't be flushed. Possible reasons:\n"
