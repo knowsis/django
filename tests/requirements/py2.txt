@@ -2,4 +2,4 @@
 PIL
 py-bcrypt
 python-memcached==1.58
-Textile
+Textile==2.3.5
