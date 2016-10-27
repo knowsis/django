@@ -2,5 +2,5 @@ docutils==0.12
 Markdown
 numpy
 PyYAML
-pytz
+pytz==2016.7
 selenium
