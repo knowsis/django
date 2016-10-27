@@ -1,5 +1,5 @@
 docutils==0.12
-Markdown
+Markdown==2.6.7
 numpy==1.11.2
 PyYAML==3.12
 pytz==2016.7
