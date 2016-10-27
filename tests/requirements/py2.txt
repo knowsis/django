@@ -1,5 +1,5 @@
 -r base.txt
 PIL
 py-bcrypt
-python-memcached
+python-memcached==1.58
 Textile
