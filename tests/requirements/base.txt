@@ -1,6 +1,6 @@
 docutils==0.12
 Markdown
-numpy
+numpy==1.11.2
 PyYAML==3.12
 pytz==2016.7
 selenium==3.0.1
