@@ -1,5 +1,5 @@
 -r base.txt
 PIL
-py-bcrypt
+py-bcrypt==0.4
 python-memcached==1.58
 Textile==2.3.5
