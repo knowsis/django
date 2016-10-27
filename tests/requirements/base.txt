@@ -3,4 +3,4 @@ Markdown
 numpy
 PyYAML
 pytz==2016.7
-selenium
+selenium==3.0.1
